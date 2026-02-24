@@ -748,13 +748,17 @@ export default function App() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-bold text-ogun-gold mb-2">2. Elementor Method</h4>
-                  <p className="text-sm mb-4">To use this design inside an existing Elementor site:</p>
+                  <h4 className="font-bold text-ogun-gold mb-2">2. Elementor Method (Independent Sections)</h4>
+                  <p className="text-sm mb-4">I have generated individual HTML files for each section of the site. You can now drag an <strong>Elementor HTML Widget</strong> for each part of your page:</p>
                   <ul className="list-disc list-inside text-sm space-y-2">
-                    <li>Open the file <code className="text-white">elementor-agenda-widget.html</code>.</li>
-                    <li>Copy the code and paste it into an <strong>Elementor HTML Widget</strong>.</li>
-                    <li>Ensure Tailwind CSS is loaded (I've included a CDN link in the guide).</li>
+                    <li><code className="text-white">elementor-hero.html</code> - The split-layout hero section.</li>
+                    <li><code className="text-white">elementor-about.html</code> - The "Meet the Candidate" section.</li>
+                    <li><code className="text-white">elementor-agenda-widget.html</code> - The 7-Point Agenda grid.</li>
+                    <li><code className="text-white">elementor-gallery.html</code> - The photo gallery.</li>
+                    <li><code className="text-white">elementor-movement.html</code> - The "Join the Movement" call-to-action.</li>
+                    <li><code className="text-white">elementor-contact.html</code> - The contact form section.</li>
                   </ul>
+                  <p className="text-xs mt-4 text-slate-400 italic">Note: Ensure Tailwind CSS is active in your theme or via Elementor Custom Code.</p>
                 </div>
               </div>
             </motion.div>
