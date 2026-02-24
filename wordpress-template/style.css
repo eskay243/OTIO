@@ -1,0 +1,17 @@
+/*
+Theme Name: OTO 2027 - Our Time Ogun
+Theme URI: https://oto2027.com
+Description: Custom campaign theme for Otunba Tunji Oredipe (OTO).
+Author: OTO Campaign Team
+Version: 1.0
+Text Domain: oto2027
+*/
+
+/* Tailwind is loaded via CDN or compiled in functions.php */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, .serif {
+    font-family: 'Playfair Display', serif;
+}
