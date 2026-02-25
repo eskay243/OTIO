@@ -749,16 +749,18 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="font-bold text-ogun-gold mb-2">2. Elementor Method (Independent Sections)</h4>
-                  <p className="text-sm mb-4">I have generated individual HTML files for each section of the site. You can now drag an <strong>Elementor HTML Widget</strong> for each part of your page:</p>
-                  <ul className="list-disc list-inside text-sm space-y-2">
-                    <li><code className="text-white">elementor-hero.html</code> - The split-layout hero section.</li>
-                    <li><code className="text-white">elementor-about.html</code> - The "Meet the Candidate" section.</li>
-                    <li><code className="text-white">elementor-agenda-widget.html</code> - The 7-Point Agenda grid.</li>
-                    <li><code className="text-white">elementor-gallery.html</code> - The photo gallery.</li>
-                    <li><code className="text-white">elementor-movement.html</code> - The "Join the Movement" call-to-action.</li>
-                    <li><code className="text-white">elementor-contact.html</code> - The contact form section.</li>
+                  <p className="text-sm mb-4">The theme is now fully <strong>Elementor-Ready</strong>. You have two ways to use it:</p>
+                  <ul className="list-disc list-inside text-sm space-y-4">
+                    <li>
+                      <strong>Option A: Use Independent Widgets</strong><br/>
+                      Drag an <strong>Elementor HTML Widget</strong> onto any page and paste the code from the <code className="text-white">elementor-*.html</code> files.
+                    </li>
+                    <li>
+                      <strong>Option B: Full-Width Editing</strong><br/>
+                      Create a new page, set the template to <strong>"Elementor Full Width"</strong>, and click "Edit with Elementor". The theme will provide the header/footer, and you can build the rest.
+                    </li>
                   </ul>
-                  <p className="text-xs mt-4 text-slate-400 italic">Note: Ensure Tailwind CSS is active in your theme or via Elementor Custom Code.</p>
+                  <p className="text-xs mt-4 text-slate-400 italic">Note: I've added <code className="text-white">important: true</code> to the Tailwind config in <code className="text-white">functions.php</code> to ensure your campaign styles override Elementor defaults.</p>
                 </div>
               </div>
             </motion.div>

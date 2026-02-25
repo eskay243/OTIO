@@ -29,6 +29,7 @@ function oto2027_tailwind_config() {
     ?>
     <script>
         tailwind.config = {
+            important: true, // This helps Tailwind classes override Elementor defaults when needed
             theme: {
                 extend: {
                     colors: {
@@ -43,7 +44,25 @@ function oto2027_tailwind_config() {
             }
         }
     </script>
+    <style>
+        /* Fix for Elementor + Tailwind conflicts */
+        .elementor-widget-container {
+            font-family: inherit;
+        }
+        /* Ensure Tailwind's base styles don't break Elementor's UI in the editor */
+        .elementor-editor-active .tailwind-base {
+            display: none;
+        }
+    </style>
     <?php
 }
 add_action('wp_head', 'oto2027_tailwind_config');
+
+/**
+ * Elementor Compatibility
+ */
+function oto2027_add_elementor_support() {
+    add_theme_support( 'elementor-full-width' );
+}
+add_action( 'after_setup_theme', 'oto2027_add_elementor_support' );
 ?>
