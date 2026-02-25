@@ -748,19 +748,18 @@ export default function App() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-bold text-ogun-gold mb-2">2. Elementor Method (Independent Sections)</h4>
-                  <p className="text-sm mb-4">The theme is now fully <strong>Elementor-Ready</strong>. You have two ways to use it:</p>
-                  <ul className="list-disc list-inside text-sm space-y-4">
-                    <li>
-                      <strong>Option A: Use Independent Widgets</strong><br/>
-                      Drag an <strong>Elementor HTML Widget</strong> onto any page and paste the code from the <code className="text-white">elementor-*.html</code> files.
-                    </li>
-                    <li>
-                      <strong>Option B: Full-Width Editing</strong><br/>
-                      Create a new page, set the template to <strong>"Elementor Full Width"</strong>, and click "Edit with Elementor". The theme will provide the header/footer, and you can build the rest.
-                    </li>
-                  </ul>
-                  <p className="text-xs mt-4 text-slate-400 italic">Note: I've added <code className="text-white">important: true</code> to the Tailwind config in <code className="text-white">functions.php</code> to ensure your campaign styles override Elementor defaults.</p>
+                  <h4 className="font-bold text-ogun-gold mb-2">2. Elementor Method (Shortcodes)</h4>
+                  <p className="text-sm mb-4">The theme is now a <strong>Blank Canvas</strong>. To build your pages in Elementor using the campaign components, use these shortcodes:</p>
+                  <div className="bg-black/20 p-4 rounded-lg space-y-2 font-mono text-xs">
+                    <p className="text-white">[oto_hero] <span className="text-slate-500">- Split Hero Section</span></p>
+                    <p className="text-white">[oto_about] <span className="text-slate-500">- Meet the Candidate Summary</span></p>
+                    <p className="text-white">[oto_agenda] <span className="text-slate-500">- 7-Point Agenda Grid</span></p>
+                    <p className="text-white">[oto_gallery] <span className="text-slate-500">- Photo Gallery</span></p>
+                    <p className="text-white">[oto_movement] <span className="text-slate-500">- Join the Movement CTA</span></p>
+                    <p className="text-white">[oto_contact] <span className="text-slate-500">- Contact Form</span></p>
+                    <p className="text-white">[oto_bio] <span className="text-slate-500">- Full Biography Section</span></p>
+                  </div>
+                  <p className="text-sm mt-4">Simply drag a <strong>Shortcode Widget</strong> in Elementor and paste any of the above codes. You can now add any other Elementor widgets above, below, or between these components.</p>
                 </div>
               </div>
             </motion.div>
